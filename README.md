@@ -134,6 +134,7 @@ https://cloud.mongodb.com
 
 \src\models\User.js
 
+\src\models\Spot.js
 
 
 ---
@@ -142,4 +143,47 @@ https://cloud.mongodb.com
 
 >>> Business Rules
 
-\src\Controllers
+\src\controllers
+
+>> SessionController.js
+// index, show, store, update, destroy
+
+
+
+\src\controllers\SessionController.js
+
+\src\controllers\SpotController.js
+
+
+Requisition with Image Upload => Use Multipart Form
+### Library MultiPart Data // Uploads Images
+
+> yarn add multer
+
+>>> \config\upload.js
+
+
+> JWT Autentication
+>> Header
+>> User 5d94beb7cc2cc533907d23c1
+
+
+
+----
+
+##  FrontEnd / Interface Web
+
+> yarn create react-app frontend
+> npmx create-react-app frontend
+>> https://babeljs.io/
+>> https://webpack.js.org/
+
+
+> Execute Backend Services
+>> cd Backend
+>> yarn dev
+
+
+> Iniciar Frontend Services
+>> cd FrontEnd
+>> yarn start
