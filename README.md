@@ -187,3 +187,54 @@ Requisition with Image Upload => Use Multipart Form
 > Iniciar Frontend Services
 >> cd FrontEnd
 >> yarn start
+
+
+> Create folder \assets
+>> \src\assets
+
+
+> Roboto Font
+>> https://fonts.google.com/specimen/Roboto?selection.family=Roboto
+
+body, input, button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+
+
+> Extension Color HighLight
+
+
+> Library Call API
+>> yarn add axios
+
+
+
+> CORS Dependencies
+>>> Access to XMLHttpRequest at 'http://localhost:3333/sessions' from origin 'http://localhost:3000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+>> yarn add cors
+
+
+
+
+> Browser Database
+
+    localStorage.setItem('user', _id);
+
+    import { BrowserRouter } from 'react-router-dom';
+
+    import { BrowserRouter, Switch, Route  } from 'react-router-dom';
+
+
+
+> Bibliotecas de Rotas do ReactJS
+>>> yarn add react-router-dom
+
+
+
+> Virtual Schema mongodb
+SpotSchema.virtual('thumbnail_url').get(function() {
+  return `http://localhost:3333/files/${this.thumbnail}`
+})
