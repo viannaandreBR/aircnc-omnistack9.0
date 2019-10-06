@@ -1,5 +1,14 @@
 "# aircnc-omnistack9.0"
 
+## start
+
+> /Backend
+>> yarn dev
+
+
+>> /Mobile
+>> yarn start
+
 ---
 ## Unit 1 - Environment
 
@@ -238,3 +247,65 @@ body, input, button {
 SpotSchema.virtual('thumbnail_url').get(function() {
   return `http://localhost:3333/files/${this.thumbnail}`
 })
+
+
+
+
+---
+
+## Mobile - ReactNative
+
+> Duas formas de iniciar o ReactNative
+
+>>> Expo
+>>>>> não precisa instalar as dependencias nativas: Android, iOS
+>>>>> npm install -g expo-cli
+>>>>> expo init mobile
+>>>>> cd Mobile
+>>>>> yarn start
+
+>>> CLI
+
+
+
+>> Install React-Navigation
+>>>> yarn add react-navigation
+
+
+
+> React navigation
+>>>> https://reactnavigation.org/
+>>>>https://reactnavigation.org/docs/en/getting-started.html
+>>>>
+>>>> expo install react-native-gesture-handler react-native-reanimated
+
+
+> Axios Router Communication
+>>> yarn add Axios
+
+
+---
+
+>> URL Address
+
+https://pastebin.com/dB3hFgZw
+
+<Image style={styles.thumbnail} source={{uri: "IP_LOCAL_COM_HTTP/files"+item.thumbnail_url.split('/files')[1]}}/>
+
+
+>> mongodb
+
+mongodb+srv://<username>:<password>@cluster0-fal35.mongodb.net/admin
+
+
+
+
+---
+
+## Advanced Functions
+
+> yarn add socket.io
+
+> Protocols
+>> Http -> Assincrono
+>> WebSocket -> Sincrono
