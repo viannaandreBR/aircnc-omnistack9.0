@@ -304,8 +304,19 @@ mongodb+srv://<username>:<password>@cluster0-fal35.mongodb.net/admin
 
 ## Advanced Functions
 
-> yarn add socket.io
+> /backend
+>>> yarn add socket.io
+>>> yarn dev
+
+> /frontend
+>>> yarn add socket.io-client
+>>> yarn start
+
 
 > Protocols
 >> Http -> Assincrono
 >> WebSocket -> Sincrono
+
+
+const socketio = require('socket.io');
+const http = require('http');
