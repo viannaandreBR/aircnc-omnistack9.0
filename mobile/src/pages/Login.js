@@ -21,7 +21,7 @@ export default function Login( { navigation } ) {
     }
     catch(error){
         alert(error);
-    }        
+    }
 }, []);
 
 
@@ -47,7 +47,7 @@ export default function Login( { navigation } ) {
 
     <View style={styles.form}>
       <Text style={styles.label}>Seu e-mail*</Text>
-      <TextInput 
+      <TextInput
         style={styles.input}
         placeholder="Seu e-mail"
         placeholderTextColor="#999"
@@ -58,7 +58,7 @@ export default function Login( { navigation } ) {
         onChangeText={setEmail}
       />
       <Text style={styles.label}>Tecnologias</Text>
-      <TextInput 
+      <TextInput
         style={styles.input}
         placeholder="Tecnologias de interesse"
         placeholderTextColor="#999"
@@ -75,7 +75,7 @@ export default function Login( { navigation } ) {
 
 
     </View>
-    
+
   </KeyboardAvoidingView>
   );
 }
